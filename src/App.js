@@ -4,6 +4,9 @@ import './App.css';
 import Person from './Person/Person';
 import UserOutput from './Assignment1/UserOutput';
 import UserInput from './Assignment1/UserInput';
+import AssignmentApp from './Assignment2/AssignmentApp';
+import RoutApp from './Routing/RoutApp';
+import {BrowserRouter as Router} from 'react-router-dom';
 
 class App extends Component {
   state={
@@ -82,6 +85,7 @@ class App extends Component {
     }
     return(<div className='App'><h1>React - App</h1>
       <p>Let's Learn Coding With MAX</p>
+      <RoutApp />
 
   <br/>
      { /*inline button styling*/}
