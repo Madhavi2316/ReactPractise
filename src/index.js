@@ -7,5 +7,6 @@ import RoutApp from './Routing/RoutApp';
 import AgeDecreaseApp from './AgeDecrease/AgeDecreaseApp';
 import TwoWayBindApp from './TwoWayBinding/TwoWayBindApp';
 import MathOperationApp from './MathOperations/MathOperationApp';
-ReactDOM.render(<MathOperationApp />, document.getElementById('root'));
+import ParentToChilApp from './Parent-Child/ParentToChilApp';
+ReactDOM.render(<ParentToChilApp />, document.getElementById('root'));
 registerServiceWorker();

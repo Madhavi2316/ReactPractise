@@ -58,11 +58,11 @@ class MathOperationApp extends Component{
               <input onChange={this.valueSecondChange} type="text" value={this.state.second}/> 
               <label>Result:{this.state.Result} </label>
               <br/>
-              <button onClick={this.add}>ADD</button><br/>
-              <button onClick={this.dec}>Dec</button><br/>
-              <button onClick={this.mul}>Mul</button><br/>
-              <button onClick={this.div}>DIV</button><br/>
-              <button onClick={this.set}>Reset</button>
+              <button onClick={this.add}>ADD</button><br/><br/>
+              <button onClick={this.dec}>DEC</button><br/><br />
+              <button onClick={this.mul}>MUL</button><br/><br />
+              <button onClick={this.div}>DIV</button><br/><br />
+              <button onClick={this.set}>RESET</button>
             </div>
         );
     }
