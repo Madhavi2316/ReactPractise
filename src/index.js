@@ -6,5 +6,6 @@ import registerServiceWorker from './registerServiceWorker';
 import RoutApp from './Routing/RoutApp';
 import AgeDecreaseApp from './AgeDecrease/AgeDecreaseApp';
 import TwoWayBindApp from './TwoWayBinding/TwoWayBindApp';
-ReactDOM.render(<TwoWayBindApp />, document.getElementById('root'));
+import MathOperationApp from './MathOperations/MathOperationApp';
+ReactDOM.render(<MathOperationApp />, document.getElementById('root'));
 registerServiceWorker();
