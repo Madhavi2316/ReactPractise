@@ -4,5 +4,6 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import RoutApp from './Routing/RoutApp';
-ReactDOM.render(<App />, document.getElementById('root'));
+import AgeDecreaseApp from './AgeDecrease/AgeDecreaseApp';
+ReactDOM.render(<AgeDecreaseApp />, document.getElementById('root'));
 registerServiceWorker();
