@@ -5,5 +5,6 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import RoutApp from './Routing/RoutApp';
 import AgeDecreaseApp from './AgeDecrease/AgeDecreaseApp';
-ReactDOM.render(<AgeDecreaseApp />, document.getElementById('root'));
+import TwoWayBindApp from './TwoWayBinding/TwoWayBindApp';
+ReactDOM.render(<TwoWayBindApp />, document.getElementById('root'));
 registerServiceWorker();

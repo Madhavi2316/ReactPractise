@@ -13,7 +13,11 @@ class AgeDecreaseApp extends Component{
                {
                  name:'Priya',age:40
         
-                }
+                },
+                {
+                    name:'PriyaMani',age:50
+           
+                   }
                 ]
     };
     decMyAge=(e)=>{
