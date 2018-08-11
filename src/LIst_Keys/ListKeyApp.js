@@ -38,6 +38,22 @@ class ListKeyApp extends Component{
         //Setting state
         this.setState({Users:Users})
         }
+         ageChangeHandeler=(id,e)=>{
+       //index of element changed
+       const index=this.state.Users.findIndex((user)=>{
+        return user.id==id })
+        //copying user state of index
+        const user=Object.assign([],this.state.Users[index]);
+        //cahnge name value by name given in input field 
+        user.age=e.target.value;
+        //copying complete users JSON into Users
+        const Users=Object.assign([], this.state.Users);
+        //Changed user to update in Users
+        Users[index]=user;
+        //Setting state
+     this.setState({Users:Users})
+
+       }
     render(){
         return(<div>
             <h3>List-Key</h3>
@@ -46,9 +62,11 @@ class ListKeyApp extends Component{
            { this.state.Users.map((user, index)=>{
               return (
                 <Users name={user.name}
+                 key={user.id}
                  delEvent={this.deleteEventHander.bind(this,index)}
                  inputChange={this.inputNameChangeHander.bind(this,user.id)}
-                 key={user.id}>
+                 agechanged={this.ageChangeHandeler.bind(this,user.id)}
+                 >
                  {user.age}</Users>
                  )
 
