@@ -8,5 +8,6 @@ import AgeDecreaseApp from './AgeDecrease/AgeDecreaseApp';
 import TwoWayBindApp from './TwoWayBinding/TwoWayBindApp';
 import MathOperationApp from './MathOperations/MathOperationApp';
 import ParentToChilApp from './Parent-Child/ParentToChilApp';
-ReactDOM.render(<ParentToChilApp />, document.getElementById('root'));
+import ListKeyApp from './LIst_Keys/ListKeyApp';
+ReactDOM.render(<ListKeyApp />, document.getElementById('root'));
 registerServiceWorker();
